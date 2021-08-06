@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82101D3F2489434200B2731E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82101D3B2489434200B2731E /* main.cpp */; };
+		82101D402489434200B2731E /* rx_trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82101D3D2489434200B2731E /* rx_trackball.cpp */; };
+		8296AC112482229B00722937 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8296AC0F2482229B00722937 /* GLUT.framework */; };
+		8296AC122482229B00722937 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8296AC102482229B00722937 /* OpenGL.framework */; };
+		8296AC16248222B000722937 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8296AC13248222B000722937 /* libBulletCollision.a */; };
+		8296AC17248222B000722937 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8296AC14248222B000722937 /* libBulletDynamics.a */; };
+		8296AC18248222B000722937 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8296AC15248222B000722937 /* libLinearMath.a */; };
+		8296AC2224822B0200722937 /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8296AC2124822B0200722937 /* libBulletSoftBody.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8296ABFF248221E800722937 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		829DB64A248941FE00FA40E4 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		82101D3B2489434200B2731E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		82101D3C2489434200B2731E /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		82101D3D2489434200B2731E /* rx_trackball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rx_trackball.cpp; sourceTree = "<group>"; };
+		82101D3E2489434200B2731E /* rx_trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rx_trackball.h; sourceTree = "<group>"; };
+		8296AC01248221E800722937 /* btcube */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = btcube; sourceTree = BUILT_PRODUCTS_DIR; };
+		8296AC0F2482229B00722937 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		8296AC102482229B00722937 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8296AC13248222B000722937 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = ../../shared/lib_mac/libBulletCollision.a; sourceTree = "<group>"; };
+		8296AC14248222B000722937 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = ../../shared/lib_mac/libBulletDynamics.a; sourceTree = "<group>"; };
+		8296AC15248222B000722937 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = ../../shared/lib_mac/libLinearMath.a; sourceTree = "<group>"; };
+		8296AC2124822B0200722937 /* libBulletSoftBody.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletSoftBody.a; path = ../../shared/lib_mac/libBulletSoftBody.a; sourceTree = "<group>"; };
+		8296AC2524822E3200722937 /* lib_mac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib_mac; path = ../../shared/lib_mac; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8296ABFE248221E800722937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8296AC2224822B0200722937 /* libBulletSoftBody.a in Frameworks */,
+				8296AC16248222B000722937 /* libBulletCollision.a in Frameworks */,
+				8296AC17248222B000722937 /* libBulletDynamics.a in Frameworks */,
+				8296AC18248222B000722937 /* libLinearMath.a in Frameworks */,
+				8296AC112482229B00722937 /* GLUT.framework in Frameworks */,
+				8296AC122482229B00722937 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8296ABF8248221E800722937 = {
+			isa = PBXGroup;
+			children = (
+				8296AC03248221E800722937 /* btcube */,
+				8296AC02248221E800722937 /* Products */,
+				8296AC0E2482229B00722937 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8296AC02248221E800722937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8296AC01248221E800722937 /* btcube */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8296AC03248221E800722937 /* btcube */ = {
+			isa = PBXGroup;
+			children = (
+				82101D3B2489434200B2731E /* main.cpp */,
+				82101D3D2489434200B2731E /* rx_trackball.cpp */,
+				82101D3E2489434200B2731E /* rx_trackball.h */,
+				82101D3C2489434200B2731E /* utils.h */,
+			);
+			path = btcube;
+			sourceTree = "<group>";
+		};
+		8296AC0E2482229B00722937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8296AC2524822E3200722937 /* lib_mac */,
+				8296AC2124822B0200722937 /* libBulletSoftBody.a */,
+				8296AC13248222B000722937 /* libBulletCollision.a */,
+				8296AC14248222B000722937 /* libBulletDynamics.a */,
+				8296AC15248222B000722937 /* libLinearMath.a */,
+				8296AC0F2482229B00722937 /* GLUT.framework */,
+				8296AC102482229B00722937 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8296AC00248221E800722937 /* btcube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8296AC08248221E800722937 /* Build configuration list for PBXNativeTarget "btcube" */;
+			buildPhases = (
+				8296ABFD248221E800722937 /* Sources */,
+				8296ABFE248221E800722937 /* Frameworks */,
+				8296ABFF248221E800722937 /* CopyFiles */,
+				829DB64A248941FE00FA40E4 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = btcube;
+			productName = btcube;
+			productReference = 8296AC01248221E800722937 /* btcube */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8296ABF9248221E800722937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Kaito Ikehata";
+				TargetAttributes = {
+					8296AC00248221E800722937 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8296ABFC248221E800722937 /* Build configuration list for PBXProject "btcube" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8296ABF8248221E800722937;
+			productRefGroup = 8296AC02248221E800722937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8296AC00248221E800722937 /* btcube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8296ABFD248221E800722937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82101D402489434200B2731E /* rx_trackball.cpp in Sources */,
+				82101D3F2489434200B2731E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8296AC06248221E800722937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8296AC07248221E800722937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8296AC09248221E800722937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "../../shared/inc/**";
+				LIBRARY_SEARCH_PATHS = "../../shared/lib_mac/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8296AC0A248221E800722937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "../../shared/inc/**";
+				LIBRARY_SEARCH_PATHS = "../../shared/lib_mac/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8296ABFC248221E800722937 /* Build configuration list for PBXProject "btcube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8296AC06248221E800722937 /* Debug */,
+				8296AC07248221E800722937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8296AC08248221E800722937 /* Build configuration list for PBXNativeTarget "btcube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8296AC09248221E800722937 /* Debug */,
+				8296AC0A248221E800722937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8296ABF9248221E800722937 /* Project object */;
+}
